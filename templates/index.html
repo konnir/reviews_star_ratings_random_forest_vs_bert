@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Review Server</title>
+    <style>
+        .logo {
+            display: block;
+            margin: 0 auto; /* Centers the image horizontally */
+            width: 150px; /* Adjust the width as needed */
+            height: auto; /* Maintains the aspect ratio of the image */
+        }
+        .amazon-robot {
+            display: block;
+            margin: 20px auto; /* Centers the image and adds some margin above */
+            width: 25%; /* Adjust the width as needed, or use a fixed width in pixels */
+            height: auto; /* Maintains the aspect ratio */
+        }
+        .review-row { margin-bottom: 10px; }
+        .review-input, .submit-btn {
+            margin-right: 5px;
+            display: inline-block; /* Ensures alignment */
+        }
+        .review-input {
+            width: 90%; /* Adjust the width as needed */
+            /* Optionally, increase height: height: 2em; */
+        }
+        .submit-btn {
+            /* Styles for the submit button */
+        }
+        .rating {
+            display: inline-block;
+            font-size: 20px;
+        }
+        .star-1 { color: red; }
+        .star-2 { color: darkred; }
+        .star-3 { color: orange; }
+        .star-4 { color: #006400; } /* Using hex code for a deep green */
+        .star-5 { color: green; }
+    </style>
+</head>
+<body>
+<img src="../static/logo-velotix.svg" alt="Velotix Logo" class="logo">
+<h1>Amazon Review Server</h1>
+<div id="review-forms">
+    <!-- Repeat this block for 10 input groups -->
+    <div class="review-row">
+        <input type="text" class="review-input" placeholder="Enter review title">
+        <button class="submit-btn">Submit</button>
+        <div class="rating"></div>
+    </div>
+    <div class="review-row">
+        <input type="text" class="review-input" placeholder="Enter review title">
+        <button class="submit-btn">Submit</button>
+        <div class="rating"></div>
+    </div>
+    <div class="review-row">
+        <input type="text" class="review-input" placeholder="Enter review title">
+        <button class="submit-btn">Submit</button>
+        <div class="rating"></div>
+    </div>
+    <div class="review-row">
+        <input type="text" class="review-input" placeholder="Enter review title">
+        <button class="submit-btn">Submit</button>
+        <div class="rating"></div>
+    </div>
+    <div class="review-row">
+        <input type="text" class="review-input" placeholder="Enter review title">
+        <button class="submit-btn">Submit</button>
+        <div class="rating"></div>
+    </div>
+</div>
+<img src="{{ url_for('static', filename='amazon_robot.webp') }}" alt="Amazon Robot" class="amazon-robot">
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.submit-btn').forEach((button, index) => {
+        button.addEventListener('click', (event) => {
+            const reviewInput = event.target.previousElementSibling;
+            const reviewText = reviewInput.value;
+            const ratingDisplay = event.target.nextElementSibling;
+            const reviewId = index + 1; // Assuming review IDs are 1-indexed
+
+            // Prepare form data
+            const formData = new FormData();
+            formData.append(reviewId, reviewText);
+
+            // Example AJAX call to your Flask endpoint
+            fetch('/predict/random_forest?req_id=' + reviewId, {
+                method: 'POST',
+                body: new URLSearchParams(formData)
+            })
+            .then(response => response.json())
+            .then(data => {
+                ratingDisplay.innerHTML = ''; // Clear previous content
+                const ratings = data.ratings; // Extract ratings from response
+                const rating = ratings[reviewId]; // Get the rating for this review
+
+                // Create a string of stars
+                let stars = ''.padStart(rating, '*');
+
+                // Set the class based on the rating
+                const ratingClass = `star-${rating}`;
+                ratingDisplay.textContent = `${rating} `; // Display rating number
+                const span = document.createElement('span');
+                span.className = ratingClass;
+                span.textContent = stars;
+                ratingDisplay.appendChild(span); // Display stars with color
+            })
+            .catch(error => console.error('Error:', error));
+        });
+    });
+});
+</script>
+</body>
+</html>

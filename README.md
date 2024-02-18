@@ -19,3 +19,29 @@ _Deliverables:
 A detailed report of your analysis and model development.
 Source code for the model and the Flask application.
 Documentation for application setup and usage.
+
+# Submission:
+
+1. models:
+-  Data exploration (see notebooks/am_data_explore.ipynb)
+-  Logistic Regression - Tested, 68% accuracy
+-  Random Forest (see model_factory/am_random_forest.ipynb)- Tested, 73% accuracy - SELECTED
+-  BertForSequenceClassification, "bert-base-uncased on 10% of the data (see notebooks/bert_predictor.ipynb), 71% accuracy
+
+2. Server:
+- Full rest server (see velotix_server.py) - simple rest server on the random forest model
+
+3. Setup:
+- requirements (main folder)- based on 3.9, tried to split to base and additional
+- Model, take from drive (2.1GB) and set in  (/models) folder
+
+4. UI:
+- Simple UI base on the rest server to test on real amazon reviews (remember, 73%!)
+![image](https://github.com/konnir/velotix_ex/assets/119952960/789c614e-0bac-48a4-83a7-cd48ad4bde95)
+
+5. Rest Server:
+- simple Server, below is image to help with the sending and receiving from postman.
+- pay attention that req_id is expected in params (to link request to response and debug).
+![image](https://github.com/konnir/velotix_ex/assets/119952960/bb24ec02-9251-43d3-9431-76486f127788)
+
+

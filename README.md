@@ -33,7 +33,7 @@ Documentation for application setup and usage.
 
 3. Setup:
 - requirements (main folder)- based on 3.9, tried to split to base and additional
-- Model, take from drive (2.1GB) and set in  (/models) folder
+- Model, take from drive (2.1GB) and set in  (/models) folder - https://drive.google.com/drive/folders/1MJHU91-3o6TMMg3cLppXnotbb_J7BDwi?usp=drive_link (your email is provisioned)
 
 4. UI:
 - Simple UI base on the rest server to test on real amazon reviews

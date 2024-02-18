@@ -36,12 +36,14 @@ Documentation for application setup and usage.
 - Model, take from drive (2.1GB) and set in  (/models) folder
 
 4. UI:
-- Simple UI base on the rest server to test on real amazon reviews (remember, 73%!)
+- Simple UI base on the rest server to test on real amazon reviews
+  
 ![image](https://github.com/konnir/velotix_ex/assets/119952960/789c614e-0bac-48a4-83a7-cd48ad4bde95)
 
 5. Rest Server:
 - simple Server, below is image to help with the sending and receiving from postman.
 - pay attention that req_id is expected in params (to link request to response and debug).
+  
 ![image](https://github.com/konnir/velotix_ex/assets/119952960/bb24ec02-9251-43d3-9431-76486f127788)
 
 

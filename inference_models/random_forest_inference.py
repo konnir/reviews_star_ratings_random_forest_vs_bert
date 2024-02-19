@@ -5,7 +5,7 @@ from inference_models import inference_utils
 
 
 class RandomForestAmazonModel:
-    def __init__(self, model_path: str = '../models/random_forest_review_model.joblib'):
+    def __init__(self, model_path: str = 'models/random_forest_review_model.joblib'):
         from joblib import load
         model_filename = model_path
         self.random_forest_model = joblib.load(model_filename)

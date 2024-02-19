@@ -23,7 +23,7 @@
             display: inline-block; /* Ensures alignment */
         }
         .review-input {
-            width: 70%; /* Adjust the width as needed */
+            width: 90%; /* Adjust the width as needed */
             /* Optionally, increase height: height: 2em; */
         }
         .submit-btn {
@@ -83,56 +83,33 @@
             const ratingDisplay = event.target.nextElementSibling;
             const reviewId = index + 1; // Assuming review IDs are 1-indexed
 
-            // Prepare form data for Random Forest model
-            const formDataRF = new FormData();
-            formDataRF.append(reviewId, reviewText);
+            // Prepare form data
+            const formData = new FormData();
+            formData.append(reviewId, reviewText);
 
-            // Call Random Forest model
+            // Example AJAX call to your Flask endpoint
             fetch('/predict/random_forest?req_id=' + reviewId, {
                 method: 'POST',
-                body: new URLSearchParams(formDataRF)
+                body: new URLSearchParams(formData)
             })
             .then(response => response.json())
-            .then(dataRF => {
-                const ratingRF = dataRF.ratings[reviewId]; // Rating from RF
+            .then(data => {
+                ratingDisplay.innerHTML = ''; // Clear previous content
+                const ratings = data.ratings; // Extract ratings from response
+                const rating = ratings[reviewId]; // Get the rating for this review
 
-                // Create a string of stars based on RF rating for display
-                let starsRF = ''.padStart(ratingRF, '*');
-                const ratingClassRF = `star-${ratingRF}`;
+                // Create a string of stars
+                let stars = ''.padStart(rating, '*');
 
-                // Prepare form data for BERT model
-                const formDataBERT = new FormData();
-                formDataBERT.append(reviewId, reviewText);
-
-                // Call BERT model
-                fetch('/predict/bert?req_id=' + reviewId, {
-                    method: 'POST',
-                    body: new URLSearchParams(formDataBERT)
-                })
-                .then(response => response.json())
-                .then(dataBERT => {
-                    ratingDisplay.innerHTML = ''; // Clear previous content
-
-                    const ratingBERT = dataBERT.ratings[reviewId]; // Rating from BERT
-
-                    // Create a string of stars based on BERT rating for display
-                    let starsBERT = ''.padStart(ratingBERT, '*');
-                    const ratingClassBERT = `star-${ratingBERT}`;
-
-                    // Display both RF and BERT rating numbers with stars
-                    const rfSpan = document.createElement('span');
-                    rfSpan.className = ratingClassRF;
-                    rfSpan.textContent = `RF: ${ratingRF} ${starsRF} `;
-                    ratingDisplay.appendChild(rfSpan);
-
-                    const bertSpan = document.createElement('span');
-                    bertSpan.className = ratingClassBERT;
-                    bertSpan.textContent = `BERT: ${ratingBERT} ${starsBERT}`;
-                    ratingDisplay.appendChild(bertSpan);
-                })
-                .catch(error => console.error('Error with BERT prediction:', error));
+                // Set the class based on the rating
+                const ratingClass = `star-${rating}`;
+                ratingDisplay.textContent = `${rating} `; // Display rating number
+                const span = document.createElement('span');
+                span.className = ratingClass;
+                span.textContent = stars;
+                ratingDisplay.appendChild(span); // Display stars with color
             })
-            .catch(error => console.error('Error with Random Forest prediction:', error));
+            .catch(error => console.error('Error:', error));
         });
     });
 });

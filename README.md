@@ -33,17 +33,26 @@ Documentation for application setup and usage.
 
 3. Setup:
 - requirements (main folder)- based on 3.9, tried to split to base and additional
-- Model, take from drive (2.1GB) and set in  (/models) folder - https://drive.google.com/drive/folders/1MJHU91-3o6TMMg3cLppXnotbb_J7BDwi?usp=drive_link (your email is provisioned)
+- Randome Forest Model, take from drive (2.1GB) and set in  (/models) folder
+- Bert Model (bert_3.pth), take from drive (438MB) and set in  (/models) folder
+- DS, a clean DS with 'revieText' and 'rating' is in the drive, name amazon_reviews_reviewText_ratings.csv, put it in /data
+- https://drive.google.com/drive/folders/1MJHU91-3o6TMMg3cLppXnotbb_J7BDwi?usp=drive_link (your email is provisioned)
 
 4. UI:
 - Simple UI base on the rest server to test on real amazon reviews
-  
-![image](https://github.com/konnir/velotix_ex/assets/119952960/789c614e-0bac-48a4-83a7-cd48ad4bde95)
 
-5. Rest Server:
+![image](https://github.com/konnir/velotix_ex/assets/119952960/2cca05b3-f8d7-4cd1-9e9b-031c06b4e240)
+
+
+5. Rest Server (Random Forest + BERT):
 - simple Server, below is image to help with the sending and receiving from postman.
 - pay attention that req_id is expected in params (to link request to response and debug).
-  
+
+## /predict/random_forest
+
 ![image](https://github.com/konnir/velotix_ex/assets/119952960/bb24ec02-9251-43d3-9431-76486f127788)
 
+## /predict/bert
+
+![image](https://github.com/konnir/velotix_ex/assets/119952960/ea605915-709d-478d-983b-5afd7df481e7)
 

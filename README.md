@@ -8,7 +8,7 @@ Compare ML (TF-IDF % Random Forest) and DL (Bert)
 Amazon Reviews 2018 (Full Dataset) - https://www.kaggle.com/datasets/rogate16/amazon-reviews-2018-full-dataset?resource=download
 
 ## Models Review:
-- TF-IDF + Rarndom Forest
+- TF-IDF + Random Forest
 - BertForSequenceClassification
 
 # Content

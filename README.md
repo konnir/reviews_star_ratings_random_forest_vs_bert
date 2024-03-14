@@ -8,7 +8,7 @@ Amazon Reviews 2018 (Full Dataset) - https://www.kaggle.com/datasets/rogate16/am
 
 ## Models Review:
 - TF-IDF + Rarndom Forest
-- Bert
+- Google Bert
 
 Test App:
 Create a Flask web application utilizing your model.

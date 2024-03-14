@@ -4,7 +4,7 @@
 # Amazon star - reviews DS ML and Bert
 
 ## DataSet:
-Perform data exploration, cleaning, and preparation.
+Amazon Reviews 2018 (Full Dataset) - https://www.kaggle.com/datasets/rogate16/amazon-reviews-2018-full-dataset?resource=download
 
 ## Model Development:
 Build and compare at least two predictive models.

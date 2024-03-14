@@ -1,5 +1,5 @@
 
-![Nir_Kon_Logo](https://github.com/konnir/amazon_reviews_chat_LLM_ner/assets/119952960/4f147a67-b410-4454-b88c-82fc7c2c3053)
+![Nir_Kon_Logo_inverted (1)](https://github.com/konnir/amazon_reviews_chat_LLM_ner/assets/119952960/3884a586-832a-4e6a-904b-dfcc17b6b027)
 
 # velotix_ex
 

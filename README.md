@@ -9,19 +9,9 @@ Amazon Reviews 2018 (Full Dataset) - https://www.kaggle.com/datasets/rogate16/am
 
 ## Models Review:
 - TF-IDF + Rarndom Forest
-- Google Bert
+- BertForSequenceClassification
 
-Test App:
-Create a Flask web application utilizing your model.
-The application should recommend the top 5 products based on predicted ratings.
-
-_Deliverables:
-A detailed report of your analysis and model development.
-Source code for the model and the Flask application.
-Documentation for application setup and usage.
-
-# Submission:
-
+# Content
 1. models:
 -  Data exploration (see notebooks/am_data_explore.ipynb)
 -  Logistic Regression - Tested, 68% accuracy
@@ -29,7 +19,7 @@ Documentation for application setup and usage.
 -  BertForSequenceClassification, "bert-base-uncased on 10% of the data (see notebooks/bert_predictor.ipynb), 71% accuracy
 
 2. Server:
-- Full rest server (see velotix_server.py) - simple rest server on the random forest model
+- Full rest server (see ratings_server.py) - simple rest server on the random forest model
 
 3. Setup:
 - requirements (main folder)- based on 3.9, tried to split to base and additional

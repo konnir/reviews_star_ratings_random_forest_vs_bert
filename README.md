@@ -6,11 +6,11 @@
 ## DataSet:
 Amazon Reviews 2018 (Full Dataset) - https://www.kaggle.com/datasets/rogate16/amazon-reviews-2018-full-dataset?resource=download
 
-## Model Development:
-Build and compare at least two predictive models.
-Select and justify the best performing model.
+## Models Review:
+- TF-IDF + Rarndom Forest
+- Bert
 
-_Application Development:
+Test App:
 Create a Flask web application utilizing your model.
 The application should recommend the top 5 products based on predicted ratings.
 

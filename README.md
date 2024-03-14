@@ -31,8 +31,7 @@ Amazon Reviews 2018 (Full Dataset) - https://www.kaggle.com/datasets/rogate16/am
 4. UI:
 - Simple UI base on the rest server to test on real amazon reviews
 
-![image](https://github.com/konnir/velotix_ex/assets/119952960/2cca05b3-f8d7-4cd1-9e9b-031c06b4e240)
-
+![image](https://github.com/konnir/amazon_reviews_chat_LLM_ner/assets/119952960/ac9c45ce-e6a2-4a3b-b573-051f7c2c324d)
 
 5. Rest Server (Random Forest + BERT):
 - simple Server, below is image to help with the sending and receiving from postman.

@@ -1,14 +1,12 @@
 
 ![Nir_Kon_Logo_inverted (1)](https://github.com/konnir/amazon_reviews_chat_LLM_ner/assets/119952960/3884a586-832a-4e6a-904b-dfcc17b6b027)
 
-# velotix_ex
+# Amazon reviews DataSet exploration and Sentiment Anlysis using ML and Bert
 
-Assignment Outline:
-_Data Analysis:
-Download Amazon Reviews dataset.
+## DataSet:
 Perform data exploration, cleaning, and preparation.
 
-_Model Development:
+## Model Development:
 Build and compare at least two predictive models.
 Select and justify the best performing model.
 

@@ -1,27 +1,17 @@
-![image](https://github.com/konnir/velotix_ex/assets/119952960/e4c6bb61-80ba-48a4-8b8c-4b8ab8818c74)
 
-# velotix_ex
+![Nir_Kon_Logo_inverted (1)](https://github.com/konnir/amazon_reviews_chat_LLM_ner/assets/119952960/3884a586-832a-4e6a-904b-dfcc17b6b027)
 
-Assignment Outline:
-_Data Analysis:
-Download Amazon Reviews dataset.
-Perform data exploration, cleaning, and preparation.
+# Amazon Reviews Stars Ratings: 
+Compare ML (TF-IDF + Random Forest) and DL (BertForSequenceClassification) for Amazon Reviews Stars Ratings
 
-_Model Development:
-Build and compare at least two predictive models.
-Select and justify the best performing model.
+## DataSet:
+Amazon Reviews 2018 (Full Dataset) - https://www.kaggle.com/datasets/rogate16/amazon-reviews-2018-full-dataset?resource=download
 
-_Application Development:
-Create a Flask web application utilizing your model.
-The application should recommend the top 5 products based on predicted ratings.
+## Models Review:
+- TF-IDF + Random Forest
+- BertForSequenceClassification
 
-_Deliverables:
-A detailed report of your analysis and model development.
-Source code for the model and the Flask application.
-Documentation for application setup and usage.
-
-# Submission:
-
+# Content
 1. models:
 -  Data exploration (see notebooks/am_data_explore.ipynb)
 -  Logistic Regression - Tested, 68% accuracy
@@ -29,7 +19,7 @@ Documentation for application setup and usage.
 -  BertForSequenceClassification, "bert-base-uncased on 10% of the data (see notebooks/bert_predictor.ipynb), 71% accuracy
 
 2. Server:
-- Full rest server (see velotix_server.py) - simple rest server on the random forest model
+- Full rest server (see ratings_server.py) - simple rest server on the random forest model
 
 3. Setup:
 - requirements (main folder)- based on 3.9, tried to split to base and additional
@@ -41,8 +31,7 @@ Documentation for application setup and usage.
 4. UI:
 - Simple UI base on the rest server to test on real amazon reviews
 
-![image](https://github.com/konnir/velotix_ex/assets/119952960/2cca05b3-f8d7-4cd1-9e9b-031c06b4e240)
-
+![image](https://github.com/konnir/amazon_reviews_chat_LLM_ner/assets/119952960/ac9c45ce-e6a2-4a3b-b573-051f7c2c324d)
 
 5. Rest Server (Random Forest + BERT):
 - simple Server, below is image to help with the sending and receiving from postman.

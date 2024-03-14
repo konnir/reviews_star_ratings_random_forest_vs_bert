@@ -1,7 +1,8 @@
 
 ![Nir_Kon_Logo_inverted (1)](https://github.com/konnir/amazon_reviews_chat_LLM_ner/assets/119952960/3884a586-832a-4e6a-904b-dfcc17b6b027)
 
-# Amazon Reviews Stars Ratings - Compare ML (TF-IDF $ Random Forest) and DL (Bert)
+# Amazon Reviews Stars Ratings: 
+Compare ML (TF-IDF % Random Forest) and DL (Bert)
 
 ## DataSet:
 Amazon Reviews 2018 (Full Dataset) - https://www.kaggle.com/datasets/rogate16/amazon-reviews-2018-full-dataset?resource=download

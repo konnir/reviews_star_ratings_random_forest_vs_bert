@@ -1,4 +1,5 @@
-![image](https://github.com/konnir/velotix_ex/assets/119952960/e4c6bb61-80ba-48a4-8b8c-4b8ab8818c74)
+
+![Nir_Kon_Logo](https://github.com/konnir/amazon_reviews_chat_LLM_ner/assets/119952960/4f147a67-b410-4454-b88c-82fc7c2c3053)
 
 # velotix_ex
 

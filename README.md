@@ -1,7 +1,7 @@
 
 ![Nir_Kon_Logo_inverted (1)](https://github.com/konnir/amazon_reviews_chat_LLM_ner/assets/119952960/3884a586-832a-4e6a-904b-dfcc17b6b027)
 
-# Amazon reviews DataSet exploration and Sentiment Anlysis using ML and Bert
+# Amazon star - reviews DS ML and Bert
 
 ## DataSet:
 Perform data exploration, cleaning, and preparation.

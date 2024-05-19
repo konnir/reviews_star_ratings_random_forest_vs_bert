@@ -1,5 +1,4 @@
 from flask import Flask, request, jsonify, render_template
-import numpy as np
 
 from inference_models.bert_inference import BertSentimentModel
 from inference_models.random_forest_inference import RandomForestAmazonModel
@@ -70,4 +69,4 @@ def predict_bert():
             return jsonify({'error': str(e)})
 
 if __name__ == '__main__':
-    app.run(debug=True, port=8081)
+    app.run(host='0.0.0.0', port=8081)

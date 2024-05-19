@@ -1,0 +1,11 @@
+# Ignore all files and directories
+**
+
+# But include the directories and files needed for the build
+!ratings_server.py
+!templates/
+!inference_models/
+!static/
+!models/Model_full_data/2/
+!models/random_forest_review_model.joblib
+!requirements_docker.txt

@@ -8,19 +8,25 @@ from torch.utils.data import Dataset, DataLoader
 
 
 class BertSentimentModel:
-    def __init__(self, model_path: str = 'models/bert_3.pth'):
+    def __init__(self, model_path: str = 'models/Model_full_data/2/'):
         self.device = device = 'cuda' if torch.cuda.is_available() else 'cpu'
         print(f'Using device {self.device}')
+        # self.model = BertForSequenceClassification.from_pretrained(
+        #     "bert-base-uncased",
+        #     num_labels = 5, # Number of unique labels for our multi-class classification problem.
+        #     output_attentions = False,
+        #     output_hidden_states = False,
+        # )
         self.model = BertForSequenceClassification.from_pretrained(
-            "bert-base-uncased",
-            num_labels = 5, # Number of unique labels for our multi-class classification problem.
-            output_attentions = False,
-            output_hidden_states = False,
+            model_path,
+            num_labels=5,  # Make sure this matches the original number of labels
+            output_attentions=False,
+            output_hidden_states=False,
         )
         self.model.to(device)
 
         # Load the trained model.
-        self.model.load_state_dict(torch.load(model_path))
+        # self.model.load_state_dict(torch.load(model_path, map_location=self.device))
         self.model.eval()
 
 

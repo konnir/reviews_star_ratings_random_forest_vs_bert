@@ -10,7 +10,7 @@ Fine tuning 50K star reviews (1-5) on ML (TF-IDF + Random Forest) vs DL (BertFor
 - It's a sleeping machine that load 2GB Random Forest model and another 0.5 GB of Bert model - Allow 2-3 minuites to wake up!!!
 - Allow few seconds for first hit (it's working)!
 
-![image](https://github.com/konnir/amazon_reviews_chat_LLM_ner/assets/119952960/ac9c45ce-e6a2-4a3b-b573-051f7c2c324d)
+![image](https://github.com/konnir/reviews_star_ratings_random_forest_vs_bert/assets/119952960/c7ccbae0-3bfc-4634-87e5-3808abca5ed3)
 
 ## DataSet:
 Amazon Reviews 2018 (Full Dataset) - https://www.kaggle.com/datasets/rogate16/amazon-reviews-2018-full-dataset?resource=download

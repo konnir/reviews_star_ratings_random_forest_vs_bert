@@ -4,7 +4,7 @@
 </p>
 
 # Reviews Stars Ratings - Random Forest Vs Bert: 
-Compare ML (TF-IDF + Random Forest) and DL (BertForSequenceClassification) for Amazon Reviews Stars Ratings
+Fine tuning 50K star reviews (1-5) on ML (TF-IDF + Random Forest) vs DL (BertForSequenceClassification) to compare results.
 
 - https://reviews-rater-iu5vx2gsqa-uc.a.run.app/
 - It's a sleeping machine that load 2GB Random Forest model and another 0.5 GB of Bert model - Allow 2-3 minuites to wake up!!!

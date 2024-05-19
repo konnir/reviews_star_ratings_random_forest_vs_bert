@@ -1,8 +1,15 @@
+<p align="left">
+<!--   <img src="https://github.com/konnir/x_grammar_spelling/assets/119952960/f415aef0-dd6b-4223-81be-9ce5d677b53a" alt="anyword_logo" width="150" style="margin-left: 50px;"/> -->
+  <img src="https://github.com/konnir/x_grammar_spelling/assets/119952960/aaae3161-5d93-4e82-87bf-1ac468f1817a" alt="Nir_Kon_Logo_inverted (1)" width="100"/>
+</p>
 
-![Nir_Kon_Logo_inverted (1)](https://github.com/konnir/amazon_reviews_chat_LLM_ner/assets/119952960/3884a586-832a-4e6a-904b-dfcc17b6b027)
-
-# Amazon Reviews Stars Ratings: 
+# Reviews Stars Ratings - Random Forest Vs Bert: 
 Compare ML (TF-IDF + Random Forest) and DL (BertForSequenceClassification) for Amazon Reviews Stars Ratings
+
+- https://amazon-reviews-rater-iu5vx2gsqa-uc.a.run.app
+- It's a sleeping machine that load 2GB Random Forest model and another 0.5 GB of Bert model - Allow 2-3 minuites to wake up!!!
+
+![image](https://github.com/konnir/amazon_reviews_chat_LLM_ner/assets/119952960/ac9c45ce-e6a2-4a3b-b573-051f7c2c324d)
 
 ## DataSet:
 Amazon Reviews 2018 (Full Dataset) - https://www.kaggle.com/datasets/rogate16/amazon-reviews-2018-full-dataset?resource=download
@@ -28,12 +35,7 @@ Amazon Reviews 2018 (Full Dataset) - https://www.kaggle.com/datasets/rogate16/am
 - DS, a clean DS with 'revieText' and 'rating' is in the drive, name amazon_reviews_reviewText_ratings.csv, put it in /data
 - https://drive.google.com/drive/folders/1MJHU91-3o6TMMg3cLppXnotbb_J7BDwi?usp=drive_link (your email is provisioned)
 
-4. UI:
-- Simple UI base on the rest server to test on real amazon reviews
-
-![image](https://github.com/konnir/amazon_reviews_chat_LLM_ner/assets/119952960/ac9c45ce-e6a2-4a3b-b573-051f7c2c324d)
-
-5. Rest Server (Random Forest + BERT):
+4. Rest Server (Random Forest + BERT):
 - simple Server, below is image to help with the sending and receiving from postman.
 - pay attention that req_id is expected in params (to link request to response and debug).
 

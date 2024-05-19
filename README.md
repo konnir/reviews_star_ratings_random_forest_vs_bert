@@ -38,3 +38,9 @@ Amazon Reviews 2018 (Full Dataset) - https://www.kaggle.com/datasets/rogate16/am
 4. Rest Server (Random Forest + BERT):
 - simple Server, below is image to help with the sending and receiving from postman.
 - pay attention that req_id is expected in params (to link request to response and debug).
+
+Licence:
+
+- All work done by the author is free to use without any warranty.
+- Any third parties code, models, data sets and others belong to their authors and legal entities, it's user responsibility to check and get any needed approval.
+- The purpose of this code and demo is for reaserch only.

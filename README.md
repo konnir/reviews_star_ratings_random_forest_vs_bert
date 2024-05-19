@@ -6,8 +6,9 @@
 # Reviews Stars Ratings - Random Forest Vs Bert: 
 Compare ML (TF-IDF + Random Forest) and DL (BertForSequenceClassification) for Amazon Reviews Stars Ratings
 
-- https://amazon-reviews-rater-iu5vx2gsqa-uc.a.run.app
+- [https://amazon-reviews-rater-iu5vx2gsqa-uc.a.run.app](https://reviews-rater-iu5vx2gsqa-uc.a.run.app/)
 - It's a sleeping machine that load 2GB Random Forest model and another 0.5 GB of Bert model - Allow 2-3 minuites to wake up!!!
+- Allow few seconds for first hit (it's working)!
 
 ![image](https://github.com/konnir/amazon_reviews_chat_LLM_ner/assets/119952960/ac9c45ce-e6a2-4a3b-b573-051f7c2c324d)
 
@@ -33,17 +34,7 @@ Amazon Reviews 2018 (Full Dataset) - https://www.kaggle.com/datasets/rogate16/am
 - Randome Forest Model, take from drive (2.1GB) and set in  (/models) folder
 - Bert Model (bert_3.pth), take from drive (438MB) and set in  (/models) folder
 - DS, a clean DS with 'revieText' and 'rating' is in the drive, name amazon_reviews_reviewText_ratings.csv, put it in /data
-- https://drive.google.com/drive/folders/1MJHU91-3o6TMMg3cLppXnotbb_J7BDwi?usp=drive_link (your email is provisioned)
 
 4. Rest Server (Random Forest + BERT):
 - simple Server, below is image to help with the sending and receiving from postman.
 - pay attention that req_id is expected in params (to link request to response and debug).
-
-## /predict/random_forest
-
-![image](https://github.com/konnir/velotix_ex/assets/119952960/bb24ec02-9251-43d3-9431-76486f127788)
-
-## /predict/bert
-
-![image](https://github.com/konnir/velotix_ex/assets/119952960/ea605915-709d-478d-983b-5afd7df481e7)
-

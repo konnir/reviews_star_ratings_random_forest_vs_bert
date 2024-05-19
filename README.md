@@ -6,6 +6,11 @@
 # Amazon Reviews Stars Ratings: 
 Compare ML (TF-IDF + Random Forest) and DL (BertForSequenceClassification) for Amazon Reviews Stars Ratings
 
+- Simple UI base on the rest server to test on real amazon reviews:
+- https://amazon-reviews-rater-iu5vx2gsqa-uc.a.run.app
+
+![image](https://github.com/konnir/amazon_reviews_chat_LLM_ner/assets/119952960/ac9c45ce-e6a2-4a3b-b573-051f7c2c324d)
+
 ## DataSet:
 Amazon Reviews 2018 (Full Dataset) - https://www.kaggle.com/datasets/rogate16/amazon-reviews-2018-full-dataset?resource=download
 
@@ -30,12 +35,7 @@ Amazon Reviews 2018 (Full Dataset) - https://www.kaggle.com/datasets/rogate16/am
 - DS, a clean DS with 'revieText' and 'rating' is in the drive, name amazon_reviews_reviewText_ratings.csv, put it in /data
 - https://drive.google.com/drive/folders/1MJHU91-3o6TMMg3cLppXnotbb_J7BDwi?usp=drive_link (your email is provisioned)
 
-4. UI:
-- Simple UI base on the rest server to test on real amazon reviews
-
-![image](https://github.com/konnir/amazon_reviews_chat_LLM_ner/assets/119952960/ac9c45ce-e6a2-4a3b-b573-051f7c2c324d)
-
-5. Rest Server (Random Forest + BERT):
+4. Rest Server (Random Forest + BERT):
 - simple Server, below is image to help with the sending and receiving from postman.
 - pay attention that req_id is expected in params (to link request to response and debug).
 

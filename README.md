@@ -3,7 +3,7 @@
   <img src="https://github.com/konnir/x_grammar_spelling/assets/119952960/aaae3161-5d93-4e82-87bf-1ac468f1817a" alt="Nir_Kon_Logo_inverted (1)" width="100"/>
 </p>
 
-# Amazon Reviews Stars Ratings: 
+# Reviews Stars Ratings - Random Forest Vs Bert: 
 Compare ML (TF-IDF + Random Forest) and DL (BertForSequenceClassification) for Amazon Reviews Stars Ratings
 
 - https://amazon-reviews-rater-iu5vx2gsqa-uc.a.run.app

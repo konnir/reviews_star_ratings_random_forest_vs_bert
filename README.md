@@ -3,8 +3,7 @@
   <img src="https://github.com/konnir/x_grammar_spelling/assets/119952960/aaae3161-5d93-4e82-87bf-1ac468f1817a" alt="Nir_Kon_Logo_inverted (1)" width="100"/>
 </p>
 
-<a href="https://loading-proxy-iu5vx2gsqa-uc.a.run.app/get?url=https://x-grammar-spelling-cpu-gcp-iu5vx2gsqa-uc.a.run.app/" target="_blank">http://review.nir-kon.com</a>
-
+<a href="https://loading-proxy-iu5vx2gsqa-uc.a.run.app/get?url=https://x-grammar-spelling-cpu-gcp-iu5vx2gsqa-uc.a.run.app/" target="_blank" rel="noopener noreferrer">http://review.nir-kon.com</a>
 
 # Reviews Stars Ratings - Random Forest Vs Bert: 
 Fine tuning 50K star reviews (1-5) on ML (TF-IDF + Random Forest) vs DL (BertForSequenceClassification) to compare results.

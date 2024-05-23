@@ -6,7 +6,7 @@
 # Reviews Stars Ratings - Random Forest Vs Bert: 
 Fine tuning 50K star reviews (1-5) on ML (TF-IDF + Random Forest) vs DL (BertForSequenceClassification) to compare results.
 
-- Demo UI: [http://review.nir-kon.com](https://loading-proxy-iu5vx2gsqa-uc.a.run.app/get?url=https://reviews-rater-iu5vx2gsqa-uc.a.run.app)
+- Demo UI: [http://review.nir-kon.com](https://loading-proxy-iu5vx2gsqa-uc.a.run.app/get?url=https://reviews-rater-iu5vx2gsqa-uc.a.run.app&description=%22About%203%20minute%20to%20load%20(2GB%20Random%20Forest%20model%20+%20500MB%20Bert%20model)%22)
 - It's a sleeping machine that load 2GB Random Forest model and another 0.5 GB of Bert model - Allow 2-3 minuites to wake up!!!
 - Allow few seconds for first hit (it's working)!
 
